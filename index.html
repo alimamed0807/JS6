@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Settings</h2>
+
+      <form name="myForm" onsubmit="OnSubmit(event)">
+        <div class="section">
+          <h4>Account</h4>
+
+          <label>Full Name</label>
+          <input type="text" name="fullname" />
+
+          <label>Email Address</label>
+          <input type="text" name="email" />
+          <span id="email_error"></span>
+
+          <label>Phone Number</label>
+          <input type="text" name="phone" />
+        </div>
+
+        <div class="section">
+          <h4>Billing</h4>
+
+          <div class="row">
+            <div>
+              <label>Plan</label>
+              <select name="plan">
+                <option>Basic</option>
+                <option>Standard</option>
+                <option>Premium</option>
+              </select>
+            </div>
+
+            <div>
+              <label>Billing Interval</label>
+              <select name="interval">
+                <option>Monthly</option>
+                <option>Yearly</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h4>Business Address</h4>
+
+          <label>Street Address</label>
+          <input type="text" name="street" />
+
+          <div class="row">
+            <div>
+              <label>City</label>
+              <input type="text" name="city" />
+            </div>
+
+            <div>
+              <label>Province</label>
+              <select name="province">
+                <option>Baku</option>
+                <option>Ganja</option>
+                <option>Sumqayit</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div>
+              <label>ZIP/Postal Code</label>
+              <input type="text" name="zip" />
+            </div>
+
+            <div>
+              <label>Country</label>
+              <select name="country">
+                <option>Azerbaijan</option>
+                <option>Turkey</option>
+                <option>USA</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h4>Change Password</h4>
+
+          <div class="row">
+            <div>
+              <label>Password</label>
+              <input type="password" name="password" />
+              <span id="password_error"></span>
+            </div>
+
+            <div>
+              <label>Confirm Password</label>
+              <input type="password" name="confirm" />
+            </div>
+          </div>
+        </div>
+
+        <div class="buttons">
+          <button type="reset" class="cancel">CANCEL</button>
+          <button type="submit" class="update">UPDATE</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
